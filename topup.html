@@ -15,7 +15,7 @@
       <li><a href="topup.html" class="active">เติมเกม</a></li>
       <li><a href="new.html">ข่าวสาร</a></li>
       <li><a href="contact.html">ติดต่อเรา</a></li>
-      <li><a hraf="login.html">Sing in</a></li>
+      <li><a href="login.html">Sing in</a></li>
     </ul>
   </nav>
 </header>
@@ -28,25 +28,25 @@
   <span></span>
 </div>
 
+<h2>เติมเกมของคุณ</h2>
 <div class="container">
-  <h2>เติมเกมของคุณ</h2>
-  <form class="form-box" method="POST" action="save_topup.php">
-    <label for="game">เลือกเกม</label>
-    <select name="game" id="game" required>
-      <option value="">-- เลือกเกม --</option>
-      <option value="ROV">ROV</option>
-      <option value="Free Fire">Free Fire</option>
-      <option value="PUBG">PUBG</option>
-    </select>
-
-    <label for="playerid">Player ID / User ID</label>
-    <input type="text" name="playerid" id="playerid" required placeholder="กรอก ID ผู้เล่น" />
-
-    <label for="amount">จำนวนเงิน (บาท)</label>
-    <input type="number" name="amount" id="amount" min="10" required placeholder="กรอกจำนวนเงิน" />
-
-    <button type="submit">ส่งคำขอเติมเกม</button>
-  </form>
+  <div class="cards">
+    <div class="card">
+      <img src="Image/robloxlogo.png" alt="Roblox" />
+      <h3>Roblox</h3>
+      <a href="roblox.html" class="btn">เติมเลย</a>
+    </div>
+    <div class="card">
+      <img src="Image/robloxlogo.png" alt="Free Fire" />
+      <h3>Free Fire</h3>
+      <a href="freefire.html" class="btn">เติมเลย</a>
+    </div>
+    <div class="card">
+      <img src="Image/robloxlogo.png" alt="PUBG" />
+      <h3>PUBG</h3>
+      <a href="pubg.html" class="btn">เติมเลย</a>
+    </div>
+  </div>
 </div>
 
 <footer>

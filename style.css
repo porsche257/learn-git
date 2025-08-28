@@ -56,16 +56,17 @@ nav ul li a.active {
   max-width: 1100px;
   margin: 30px auto;
   padding: 0 20px;
-  
+
 }
-.welcome-section { 
-  width: 100%;              
-  padding: 200px 150px;     
+
+.welcome-section {
+  width: 100%;
+  padding: 200px 150px;
   text-align: center;
   color: #f3f2f2;
 
   background-image: url('/Image/wallpaperflare.com_wallpaper.jpg');
-  background-size: cover;      
+  background-size: cover;
   background-position: center;
   position: relative;
   z-index: 1;
@@ -74,7 +75,10 @@ nav ul li a.active {
 .welcome-section::before {
   content: "";
   position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background: rgba(0, 0, 0, 0.4);
   z-index: -1;
 }
@@ -124,22 +128,22 @@ h2 {
 }
 
 .cards .card {
-  width: 260px;          
-  text-align: center;    
+  width: 260px;
+  text-align: center;
   padding-bottom: 10px;
 }
 
 /* รูปภาพเกม */
 .cards .card img {
   width: 100%;
-  height: 160px;         
-  object-fit: cover;     
+  height: 160px;
+  object-fit: cover;
   border-bottom: 2px solid #eee;
 }
 
 /* ชื่อเกม */
 .cards .card h3 {
-  font-size: 18px;       
+  font-size: 18px;
   margin: 12px 0 8px;
   color: #2b1055;
   font-weight: 600;
@@ -247,14 +251,17 @@ footer {
     flex-direction: column;
     align-items: center;
   }
+
   nav ul {
     flex-direction: column;
   }
+
   nav ul li {
     margin-left: 0;
     margin-bottom: 10px;
   }
 }
+
 .review-card {
   min-height: 120px;
   justify-content: space-between;
@@ -272,6 +279,7 @@ footer {
   font-size: 13px;
   text-align: right;
 }
+
 .marquee {
   background: #3e2a89;
   color: #fff;
@@ -290,8 +298,13 @@ footer {
 }
 
 @keyframes marquee {
-  from { transform: translateX(0); }
-  to   { transform: translateX(-100%); }
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
 }
 
 /* พื้นหลัง Gradient พร้อมเอฟเฟกต์อนิเมชัน */
@@ -306,7 +319,8 @@ body {
 /* เอฟเฟกต์กลม ๆ เคลื่อนที่ */
 .background-bubbles {
   position: fixed;
-  top: 0; left: 0;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   z-index: -1;
@@ -318,22 +332,65 @@ body {
   display: block;
   width: 20px;
   height: 20px;
-  background: rgba(255,255,255,0.2);
+  background: rgba(255, 255, 255, 0.2);
   border-radius: 50%;
   bottom: -150px;
   animation: rise 20s infinite;
 }
 
-.background-bubbles span:nth-child(1) { left: 25%; width: 30px; height: 30px; animation-duration: 18s; }
-.background-bubbles span:nth-child(2) { left: 10%; width: 20px; height: 20px; animation-duration: 12s; animation-delay: 2s; }
-.background-bubbles span:nth-child(3) { left: 70%; width: 25px; height: 25px; animation-duration: 16s; animation-delay: 4s; }
-.background-bubbles span:nth-child(4) { left: 40%; width: 15px; height: 15px; animation-duration: 14s; animation-delay: 6s; }
-.background-bubbles span:nth-child(5) { left: 85%; width: 35px; height: 35px; animation-duration: 20s; animation-delay: 3s; }
+.background-bubbles span:nth-child(1) {
+  left: 25%;
+  width: 30px;
+  height: 30px;
+  animation-duration: 18s;
+}
+
+.background-bubbles span:nth-child(2) {
+  left: 10%;
+  width: 20px;
+  height: 20px;
+  animation-duration: 12s;
+  animation-delay: 2s;
+}
+
+.background-bubbles span:nth-child(3) {
+  left: 70%;
+  width: 25px;
+  height: 25px;
+  animation-duration: 16s;
+  animation-delay: 4s;
+}
+
+.background-bubbles span:nth-child(4) {
+  left: 40%;
+  width: 15px;
+  height: 15px;
+  animation-duration: 14s;
+  animation-delay: 6s;
+}
+
+.background-bubbles span:nth-child(5) {
+  left: 85%;
+  width: 35px;
+  height: 35px;
+  animation-duration: 20s;
+  animation-delay: 3s;
+}
 
 @keyframes rise {
-  0% { transform: translateY(0) scale(1); opacity: 0.5; }
-  50% { opacity: 1; }
-  100% { transform: translateY(-1200px) scale(0.5); opacity: 0; }
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 0.5;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(-1200px) scale(0.5);
+    opacity: 0;
+  }
 }
 
 
@@ -370,4 +427,91 @@ body {
 .cards .card img {
   height: 180px;
   object-fit: cover;
+}
+
+.game-logo {
+  text-align: center;
+  margin-bottom: 20px;
+
+}
+
+.game-logo img {
+  width: 300px;
+  border-radius: 10px;
+}
+
+.option-btn {
+  padding: 10px 20px;
+  margin: 5px;
+  border: 2px solid #333;
+  background-color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 1.5;
+  transition: 0.3s;
+}
+
+.option-btn.selected {
+  background-color: #aa36c7;
+  /* สีเมื่อเลือก */
+  color: white;
+  /* ตัวอักษรสีขาว */
+  border-color: #aa36c7;
+}
+
+.container.first {
+  display: flex;
+  gap: 220px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 20px;
+}
+
+.box {
+  padding: 20px;
+
+  text-align: center;
+}
+
+.box:first-child {
+  flex: 0 0 30%;
+  /* ซ้ายเล็ก */
+}
+
+.box:last-child {
+  flex: 0 0 70%;
+  /* ขวาใหญ่ */
+}
+
+
+.package-options {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.package-options button {
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  background-color: #f4f4f9;
+  color: #000;
+  cursor: pointer;
+  flex: 1 1 100px;
+}
+
+.package-options {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.package-options button {
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  background-color: #2b1055;
+  color: #fff;
+  cursor: pointer;
+  flex: 1 1 100px;
 }
