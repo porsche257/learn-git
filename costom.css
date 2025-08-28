@@ -40,11 +40,28 @@ nav {
   font-size: 1rem;
 } 
 .form-signin {
-  max-width: 330px;
-  padding: 1rem;
+  margin: 0 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  padding: 7rem;
   
 }
+.wrapaper {
+  background-color: #464c96;
+  border-radius: 15px;
+  padding: 5px 32px 64px;
+  border: 1px solid rgb(148, 142, 206) ;
+  box-shadow:0 8px 15px #eeeaea;
+  overflow: hidden;
+}
+.dd {
+ color: #ffffff;
+text-align: center;
+margin: 2rem 0;
 
+}
 .form-signin .form-floating:focus-within {
   z-index: 2;
 }
