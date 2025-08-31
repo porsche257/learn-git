@@ -9,32 +9,93 @@ session_start();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous"></head>
+  <link rel="stylesheet" href="style.css" />
+  
+
 <body>
 <!-- เพิ่มใน index.php หรือไฟล์เมนู -->
 
-<div class="container">
+
      <?php include 'nav.php'; ?>
 
-              <div class="px-4 py-5 my-5 text-center"> 
-                  <h1 class="display-5 fw-bold text-body-emphasis">Centered hero</h1> 
-                  <div class="col-lg-6 mx-auto"> 
-                      <p class="lead mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p> 
-                  <div class="d-grid gap-2 d-sm-flex justify-content-sm-center"> 
-                     <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Primary button</button> 
-                     <button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button> 
-                      </div> 
-                  </div> 
-              </div>
-<!-- hero -->
-              <div class="album py-5 bg-body-tertiary"> <div class="container"> <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3"> <div class="col"> <div class="card shadow-sm"> <svg aria-label="Placeholder: Thumbnail" class="bd-placeholder-img card-img-top" height="225" preserveAspectRatio="xMidYMid slice" role="img" width="100%" xmlns="http://www.w3.org/2000/svg"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> <div class="card-body"> <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> <div class="d-flex justify-content-between align-items-center"> <div class="btn-group"> <button type="button" class="btn btn-sm btn-outline-secondary">View</button> <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> </div> <small class="text-body-secondary">9 mins</small> </div> </div> </div> </div> <div class="col"> <div class="card shadow-sm"> <svg aria-label="Placeholder: Thumbnail" class="bd-placeholder-img card-img-top" height="225" preserveAspectRatio="xMidYMid slice" role="img" width="100%" xmlns="http://www.w3.org/2000/svg"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> <div class="card-body"> <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> <div class="d-flex justify-content-between align-items-center"> <div class="btn-group"> <button type="button" class="btn btn-sm btn-outline-secondary">View</button> <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> </div> <small class="text-body-secondary">9 mins</small> </div> </div> </div> </div> <div class="col"> <div class="card shadow-sm"> <svg aria-label="Placeholder: Thumbnail" class="bd-placeholder-img card-img-top" height="225" preserveAspectRatio="xMidYMid slice" role="img" width="100%" xmlns="http://www.w3.org/2000/svg"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> <div class="card-body"> <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> <div class="d-flex justify-content-between align-items-center"> <div class="btn-group"> <button type="button" class="btn btn-sm btn-outline-secondary">View</button> <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> </div> <small class="text-body-secondary">9 mins</small> </div> </div> </div> </div> <div class="col"> <div class="card shadow-sm"> <svg aria-label="Placeholder: Thumbnail" class="bd-placeholder-img card-img-top" height="225" preserveAspectRatio="xMidYMid slice" role="img" width="100%" xmlns="http://www.w3.org/2000/svg"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> <div class="card-body"> <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> <div class="d-flex justify-content-between align-items-center"> <div class="btn-group"> <button type="button" class="btn btn-sm btn-outline-secondary">View</button> <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> </div> <small class="text-body-secondary">9 mins</small> </div> </div> </div> </div> <div class="col"> <div class="card shadow-sm"> <svg aria-label="Placeholder: Thumbnail" class="bd-placeholder-img card-img-top" height="225" preserveAspectRatio="xMidYMid slice" role="img" width="100%" xmlns="http://www.w3.org/2000/svg"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> <div class="card-body"> <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> <div class="d-flex justify-content-between align-items-center"> <div class="btn-group"> <button type="button" class="btn btn-sm btn-outline-secondary">View</button> <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> </div> <small class="text-body-secondary">9 mins</small> </div> </div> </div> </div> <div class="col"> <div class="card shadow-sm"> <svg aria-label="Placeholder: Thumbnail" class="bd-placeholder-img card-img-top" height="225" preserveAspectRatio="xMidYMid slice" role="img" width="100%" xmlns="http://www.w3.org/2000/svg"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> <div class="card-body"> <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> <div class="d-flex justify-content-between align-items-center"> <div class="btn-group"> <button type="button" class="btn btn-sm btn-outline-secondary">View</button> <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> </div> <small class="text-body-secondary">9 mins</small> </div> </div> </div> </div> <div class="col"> <div class="card shadow-sm"> <svg aria-label="Placeholder: Thumbnail" class="bd-placeholder-img card-img-top" height="225" preserveAspectRatio="xMidYMid slice" role="img" width="100%" xmlns="http://www.w3.org/2000/svg"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> <div class="card-body"> <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> <div class="d-flex justify-content-between align-items-center"> <div class="btn-group"> <button type="button" class="btn btn-sm btn-outline-secondary">View</button> <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> </div> <small class="text-body-secondary">9 mins</small> </div> </div> </div> </div> <div class="col"> <div class="card shadow-sm"> <svg aria-label="Placeholder: Thumbnail" class="bd-placeholder-img card-img-top" height="225" preserveAspectRatio="xMidYMid slice" role="img" width="100%" xmlns="http://www.w3.org/2000/svg"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> <div class="card-body"> <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> <div class="d-flex justify-content-between align-items-center"> <div class="btn-group"> <button type="button" class="btn btn-sm btn-outline-secondary">View</button> <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> </div> <small class="text-body-secondary">9 mins</small> </div> </div> </div> </div> <div class="col"> <div class="card shadow-sm"> <svg aria-label="Placeholder: Thumbnail" class="bd-placeholder-img card-img-top" height="225" preserveAspectRatio="xMidYMid slice" role="img" width="100%" xmlns="http://www.w3.org/2000/svg"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> <div class="card-body"> <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> <div class="d-flex justify-content-between align-items-center"> <div class="btn-group"> <button type="button" class="btn btn-sm btn-outline-secondary">View</button> <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> </div> <small class="text-body-secondary">9 mins</small> </div> </div> </div> </div> <div class="col"> <div class="card shadow-sm"> <svg aria-label="Placeholder: Thumbnail" class="bd-placeholder-img card-img-top" height="225" preserveAspectRatio="xMidYMid slice" role="img" width="100%" xmlns="http://www.w3.org/2000/svg"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> <div class="card-body"> <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> <div class="d-flex justify-content-between align-items-center"> <div class="btn-group"> <button type="button" class="btn btn-sm btn-outline-secondary">View</button> <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> </div> <small class="text-body-secondary">9 mins</small> </div> </div> </div> </div> </div> </div> </div>         
-        </div>
+              <div class="marquee">
+  <p>🔥 โปรโมชั่นพิเศษ! เติม ROV วันนี้รับโบนัส 20% | Free Fire แจกเพชรฟรีทุกวัน | PUBG Season ใหม่มาพร้อมสกินสุดพิเศษ 🔥</p>
+</div>
+<div class="welcome-section">
+  <h2>ยินดีต้อนรับสู่ Test shop</h2>
+  <p style="text-align:center; max-width:600px; margin: 0 auto;">
+    เว็บไซต์สำหรับเติมเกมและข่าวสารอัปเดตโปรโมชั่นล่าสุด เพื่อให้คุณได้สนุกกับเกมโปรดของคุณอย่างง่ายดายและรวดเร็ว
+  </p>
 
-<!-- foter -->
- <footer class="py-3 my-4"> <ul class="nav justify-content-center border-bottom pb-3 mb-3"> <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li> <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li> <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li> <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li> <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li> </ul> <p class="text-center text-body-secondary">© 2025 Company, Inc</p> </footer>
+<section class="hero">
+  <div class="hero-content">
+    <h2>เติมเกมง่าย รวดเร็ว ปลอดภัย</h2>
+    <p>เติมเกมมือถือยอดนิยมได้ตลอด 24 ชั่วโมง พร้อมโปรโมชั่นสุดคุ้ม</p>
+    <a href="topup.html" class="btn hero-btn">เริ่มเติมเกม</a>
+  </div>
+</section>
 
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<!-- Game Cards -->
+<div class="container">
+  <h2>เกมยอดนิยม</h2>
+  <div class="cards">
+    <div class="card">
+      <img src="/Image/unnamed.png" alt="ROV" />
+      <h3>ROV</h3>
+      <a href="topup.html" class="btn">เติมเลย</a>
+    </div>
+    <div class="card">
+      <img src="/Image/free fire.png" alt="Free Fire" />
+      <h3>Free Fire</h3>
+      <a href="topup.html" class="btn">เติมเลย</a>
+    </div>
+    <div class="card">
+      <img src="/Image/image-pubg-01.jpg" alt="PUBG" />
+      <h3>PUBG</h3>
+      <a href="topup.html" class="btn">เติมเลย</a>
+    </div>
+  </div>
+</div>
 
+<!-- News Section -->
+<div class="container">
+  <h2>ข่าวสาร & โปรโมชั่น</h2>
+  <div class="cards">
+    <div class="card">
+      <img src="/Image/conan.jpg" alt="News">
+      <h3>โปรโมชั่น ROV</h3>
+      <p>เติม ROV วันนี้ รับโบนัส 20% ทันที!</p>
+      <a href="news.php" class="btn">อ่านเพิ่มเติม</a>
+    </div>
+    <div class="card">
+      <img src="/Image/free fire Pro V1.jpg" alt="News">
+      <h3>Free Fire Season ใหม่</h3>
+      <p>อัปเดตสกินใหม่สุดพิเศษ ห้ามพลาด!</p>
+      <a href="news.php" class="btn">อ่านเพิ่มเติม</a>
+    </div>
+  </div>
+</div>
 
+<div class="container">
+  <h2>รีวิวจากลูกค้า</h2>
+  <div class="cards">
+    <div class="card review-card">
+      <p>"บริการรวดเร็วมาก เติม ROV ไม่ถึง 1 นาที ได้เพชรครบเลย 👍"</p>
+      <small>- คุณนัท, ผู้เล่น ROV</small>
+    </div>
+    <div class="card review-card">
+      <p>"ทีมงานตอบไวและแก้ปัญหาให้ทันที ประทับใจมากครับ"</p>
+      <small>- คุณบาส, ผู้เล่น Free Fire</small>
+    </div>
+    <div class="card review-card">
+      <p>"ราคาถูกกว่าเว็บอื่น เติมง่ายและปลอดภัย แนะนำเลย!"</p>
+      <small>- คุณฝน, ผู้เล่น PUBG</small>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>© 2025 Test Shop . เทสระบบเทสเทส!!!.</p>
+</footer>
 </body>
-</html>
+h
