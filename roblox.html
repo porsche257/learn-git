@@ -78,6 +78,15 @@
       // เก็บหน้าที่จะไป
       selectedPage = btn.getAttribute('data-page');
     }
+
+    // ฟังก์ชันไปหน้าที่เลือก
+    function goNext() {
+      if (selectedPage) {
+        window.location.href = selectedPage; // ไปหน้าใหม่
+      } else {
+        alert('กรุณาเลือกตัวเลือกก่อน!');
+      }
+    }
   </script>
 </body>
 
