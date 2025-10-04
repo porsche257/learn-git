@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ติดต่อเรา - Game Top-Up</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+    <div class="cursor-trail"></div>
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">🎮 GameTopUp</div>
+            <ul class="nav-menu">
+                <li><a href="index.html">หน้าแรก</a></li>
+                <li><a href="topup.html">เติมเกม</a></li>
+                <li><a href="news.html">ข่าวสาร</a></li>
+                <li><a href="contact.html" class="active">ติดต่อ</a></li>
+                <li><a href="login.html" class="btn-login">ล็อคอิน</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Promo Banner -->
+    <div class="promo-banner">
+        <div class="promo-text">
+            <span>🔥 โปรโมชั่นพิเศษ! เติม 100 แถม 20 | ✨ รับส่วนลด 15% สำหรับสมาชิกใหม่ | 🎁 เติมวันนี้รับโบนัสฟรี!</span>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <h1 class="page-title">ติดต่อเรา</h1>
+            <p class="page-subtitle">มีคำถามหรือต้องการความช่วยเหลือ? ติดต่อเราได้ตลอด 24 ชั่วโมง</p>
+
+            <div class="contact-container">
+                <!-- Contact Info -->
+                <div class="contact-info-section">
+                    <h2>ช่องทางติดต่อ</h2>
+                    
+                    <div class="contact-info-card">
+                        <div class="contact-icon">📞</div>
+                        <div class="contact-details">
+                            <h3>โทรศัพท์</h3>
+                            <p>02-xxx-xxxx</p>
+                            <span>จันทร์-อาทิตย์ 08:00-22:00 น.</span>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <div class="contact-icon">📧</div>
+                        <div class="contact-details">
+                            <h3>อีเมล</h3>
+                            <p>support@PickTopUp .com</p>
+                            <span>ตอบกลับภายใน 24 ชม.</span>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <div class="contact-icon">💬</div>
+                        <div class="contact-details">
+                            <h3>Line Official</h3>
+                            <p>@PickTopUp888</p>
+                            <span>แชทสด ตอบไว 24/7</span>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <div class="contact-icon">📱</div>
+                        <div class="contact-details">
+                            <h3>Facebook</h3>
+                            <p>PickTopUp  Thailand</p>
+                            <span>ติดตามข่าวสารและโปรโมชั่น</span>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <h3>ติดตามเรา</h3>
+                        <div class="social-icons">
+                            <a href="#" class="social-btn facebook">📘 Facebook</a>
+                            <a href="#" class="social-btn line">💚 Line</a>
+                            <a href="#" class="social-btn twitter">🐦 Twitter</a>
+                            <a href="#" class="social-btn instagram">📷 Instagram</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-section">
+                    <h2>ส่งข้อความถึงเรา</h2>
+                    
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">ชื่อ-นามสกุล *</label>
+                                <input type="text" id="name" name="name" placeholder="กรอกชื่อของคุณ" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">อีเมล *</label>
+                                <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">เบอร์โทรศัพท์</label>
+                            <input type="tel" id="phone" name="phone" placeholder="0XX-XXX-XXXX">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">หัวข้อ *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">เลือกหัวข้อ</option>
+                                <option value="topup">ปัญหาการเติมเกม</option>
+                                <option value="payment">ปัญหาการชำระเงิน</option>
+                                <option value="account">บัญชีผู้ใช้</option>
+                                <option value="promotion">สอบถามโปรโมชั่น</option>
+                                <option value="other">อื่นๆ</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">ข้อความ *</label>
+                            <textarea id="message" name="message" rows="6" placeholder="เขียนข้อความของคุณที่นี่..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-submit-contact">ส่งข้อความ</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- FAQ Section -->
+            <div class="faq-section">
+                <h2 class="section-title">คำถามที่พบบ่อย (FAQ)</h2>
+                
+                <div class="faq-grid">
+                    <div class="faq-card">
+                        <div class="faq-question">
+                            <h3>❓ เติมเกมแล้วไม่เข้า ทำยังไง?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>1. ตรวจสอบว่า UID ที่กรอกถูกต้องหรือไม่<br>
+                            2. รอประมาณ 5-30 นาที ระบบกำลังประมวลผล<br>
+                            3. ตรวจสอบสถานะออเดอร์ในหน้าเติมเกม<br>
+                            4. หากยังไม่เข้า ติดต่อทีมงานพร้อมหมายเลขออเดอร์</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-card">
+                        <div class="faq-question">
+                            <h3>❓ ระบบรองรับช่องทางชำระเงินอะไรบ้าง?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>เรารองรับหลายช่องทาง:<br>
+                            - TrueMoney Wallet<br>
+                            - PromptPay (QR Code)<br>
+                            - โอนผ่านธนาคาร<br>
+                            - บัตรเครดิต/เดบิต (เร็วๆ นี้)</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-card">
+                        <div class="faq-question">
+                            <h3>❓ ใช้เวลานานแค่ไหนถึงจะได้รับไอเทม?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>ระบบอัตโนมัติของเราใช้เวลาประมาณ 5-30 นาที<br>
+                            ในกรณีปกติ คุณจะได้รับไอเทมภายใน 15 นาที<br>
+                            หากเกิน 1 ชั่วโมง กรุณาติดต่อทีมงาน</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-card">
+                        <div class="faq-question">
+                            <h3>❓ มีค่าธรรมเนียมเพิ่มเติมไหม?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>ไม่มีค่าธรรมเนียมเพิ่มเติม!<br>
+                            ราคาที่แสดงคือราคาสุดท้ายที่คุณต้องจ่าย<br>
+                            ไม่มีค่าซ่อนเร้นใดๆ ทั้งสิ้น</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-card">
+                        <div class="faq-question">
+                            <h3>❓ สามารถขอคืนเงินได้ไหม?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>สามารถขอคืนเงินได้ในกรณี:<br>
+                            - ระบบเกิดข้อผิดพลาด<br>
+                            - ไอเทมไม่เข้าภายใน 24 ชั่วโมง<br>
+                            - กรอก UID ผิดและแจ้งภายใน 10 นาที<br>
+                            กรุณาติดต่อทีมงานพร้อมหลักฐาน</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-card">
+                        <div class="faq-question">
+                            <h3>❓ ปลอดภัยแค่ไหน?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>เราใช้ระบบรักษาความปลอดภัยระดับสูง:<br>
+                            - เข้ารหัส SSL/TLS<br>
+                            - ไม่เก็บข้อมูลบัตรเครดิต<br>
+                            - ระบบตรวจสอบอัตโนมัติ<br>
+                            - มีใบรับรองความน่าเชื่อถือ</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Map Section -->
+            <div class="map-section">
+                <h2 class="section-title">ที่ตั้งสำนักงาน</h2>
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3876.068837244514!2d100.53851639999999!3d13.714280599999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29f35d9bdff0d%3A0x8ec79fdd80befa7a!2z4Lih4Lir4Liy4Lin4Li04LiX4Lii4Liy4Lil4Lix4Lii4LmA4LiX4LiE4LmC4LiZ4LmC4Lil4Lii4Li14Lij4Liy4LiK4Lih4LiH4LiE4Lil4LiB4Lij4Li44LiH4LmA4LiX4Lie!5e0!3m2!1sth!2sth!4v1759466394175!5m2!1sth!2sth" 
+                        width="100%" 
+                        height="400" 
+                        style="border:0; border-radius: 20px;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                    <div class="map-info">
+                        <h3>🏢 สำนักงานใหญ่</h3>
+                        <p>เลขที่ 2 ถนนนางลิ้นจี่ แขวงทุ่งมหาเมฆ<br>
+                        เขตสาทร กรุงเทพฯ 10120<br>
+                        เปิดทำการ: จันทร์-ศุกร์ 09:00-18:00 น.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h4>เกี่ยวกับเรา</h4>
+                    <p>เว็บไซต์เติมเกมออนไลน์ อันดับ 1<br>บริการรวดเร็ว ปลอดภัย มั่นคง</p>
+                </div>
+                <div class="footer-col">
+                    <h4>เมนู</h4>
+                    <ul>
+                        <li><a href="index.html">หน้าแรก</a></li>
+                        <li><a href="topup.html">เติมเกม</a></li>
+                        <li><a href="news.html">ข่าวสาร</a></li>
+                        <li><a href="contact.html">ติดต่อเรา</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>ติดต่อ</h4>
+                    <p>📞 02-xxx-xxxx<br>📧 support@PickTopUp.com<br>💬 Line: @PickTopUp888</p>
+                </div>
+                <div class="footer-col">
+                    <h4>ช่องทางชำระเงิน</h4>
+                    <p>TrueMoney Wallet<br>PromptPay<br>โอนผ่านธนาคาร</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 PickTopUp. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/contact.js"></script>
+    <script src="js/particles.js"></script>
+</body>
+</html>
