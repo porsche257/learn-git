@@ -1,0 +1,631 @@
+/* Breadcrumb */
+.breadcrumb {
+    background: rgba(30, 27, 75, 0.5);
+    padding: 1rem 0;
+    font-size: 0.9rem;
+}
+
+.breadcrumb a {
+    color: #ec4899;
+    text-decoration: none;
+}
+
+.breadcrumb span {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Top-up Section */
+.topup-section {
+    padding: 60px 0;
+    min-height: 100vh;
+}
+
+.page-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.page-subtitle {
+    text-align: center;
+    font-size: 1.2rem;
+    opacity: 0.8;
+    margin-bottom: 3rem;
+}
+
+/* Games Selection Grid */
+.games-selection-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.game-select-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.game-select-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s;
+}
+
+.game-select-card:hover::before {
+    left: 100%;
+}
+
+.game-select-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 20px 40px rgba(236, 72, 153, 0.3);
+    border-color: rgba(236, 72, 153, 0.6);
+}
+
+.game-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: linear-gradient(135deg, #ef4444, #ec4899);
+    color: #fff;
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+
+.game-select-icon {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    animation: float 3s ease-in-out infinite;
+}
+
+.game-select-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.game-select-card p {
+    opacity: 0.8;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+}
+
+.price-tag {
+    display: inline-block;
+    background: linear-gradient(135deg, #8b5cf6, #3b82f6);
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+/* Top-up Form Container */
+.topup-form-container {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 25px;
+    padding: 2.5rem;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    animation: slideIn 0.5s ease;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.form-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.back-btn {
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s;
+}
+
+.back-btn:hover {
+    background: rgba(236, 72, 153, 0.3);
+    transform: translateX(-5px);
+}
+
+.form-header h2 {
+    font-size: 2rem;
+}
+
+/* Form Sections */
+.form-section {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.form-section-title {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: #ec4899;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.form-group input[type="text"],
+.form-group input[type="file"],
+.form-group select {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1rem;
+    transition: all 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #ec4899;
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 0 20px rgba(236, 72, 153, 0.3);
+}
+
+.form-group small {
+    display: block;
+    margin-top: 0.5rem;
+    opacity: 0.7;
+    font-size: 0.85rem;
+}
+
+/* Package Grid */
+.package-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 1rem;
+}
+
+.package-card {
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    padding: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s;
+    position: relative;
+}
+
+.package-card:hover {
+    transform: scale(1.05);
+    border-color: #ec4899;
+    background: rgba(236, 72, 153, 0.2);
+    box-shadow: 0 10px 25px rgba(236, 72, 153, 0.4);
+}
+
+.package-card.selected {
+    border-color: #10b981;
+    background: rgba(16, 185, 129, 0.2);
+    box-shadow: 0 10px 25px rgba(16, 185, 129, 0.4);
+}
+
+.package-card.selected::after {
+    content: '✓';
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: #10b981;
+    color: #fff;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.package-amount {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    background: linear-gradient(90deg, #ec4899, #8b5cf6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.package-price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #10b981;
+}
+
+.package-discount {
+    display: inline-block;
+    background: #ef4444;
+    color: #fff;
+    padding: 0.2rem 0.5rem;
+    border-radius: 10px;
+    font-size: 0.75rem;
+    margin-top: 0.5rem;
+}
+
+/* Payment Methods */
+.payment-methods {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.payment-method {
+    position: relative;
+}
+
+.payment-method input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+}
+
+.payment-method label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    padding: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.payment-method input:checked+label {
+    border-color: #10b981;
+    background: rgba(16, 185, 129, 0.2);
+    box-shadow: 0 10px 25px rgba(16, 185, 129, 0.3);
+}
+
+.payment-method label:hover {
+    transform: translateY(-5px);
+    border-color: #ec4899;
+    background: rgba(236, 72, 153, 0.15);
+}
+
+.payment-icon {
+    font-size: 3rem;
+}
+
+.payment-method span {
+    font-weight: 600;
+}
+
+/* Payment Details */
+.payment-details {
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.payment-info-box {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    padding: 2rem;
+    margin-top: 1.5rem;
+}
+
+.payment-info-box h4 {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+    color: #ec4899;
+}
+
+.payment-info {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.payment-info p {
+    margin-bottom: 0.8rem;
+    font-size: 1.05rem;
+}
+
+.payment-info p:last-child {
+    margin-bottom: 0;
+}
+
+.highlight-price {
+    color: #10b981;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+/* QR Code Container */
+.qr-code-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.qr-code {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.qr-code img {
+    display: block;
+    width: 200px;
+    height: 200px;
+}
+
+/* Order Summary */
+.order-summary {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border: 2px solid rgba(236, 72, 153, 0.3);
+}
+
+.order-summary h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: #ec4899;
+}
+
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.8rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.summary-item:last-child {
+    border-bottom: none;
+}
+
+.summary-item.total {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-top: 0.5rem;
+    padding-top: 1rem;
+    border-top: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Checkbox Label */
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    cursor: pointer;
+}
+
+.checkbox-label input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.link {
+    color: #ec4899;
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+/* Submit Button */
+.btn-submit {
+    width: 100%;
+    background: linear-gradient(135deg, #10b981, #059669);
+    color: #fff;
+    padding: 1.2rem;
+    border: none;
+    border-radius: 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 0 10px 30px rgba(16, 185, 129, 0.4);
+}
+
+.btn-submit:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 40px rgba(16, 185, 129, 0.6);
+}
+
+.btn-submit:active {
+    transform: translateY(-1px);
+}
+
+/* Order Status Section */
+.order-status-section {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.order-status-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.status-check-form {
+    display: flex;
+    gap: 1rem;
+    max-width: 500px;
+    margin: 0 auto 2rem;
+}
+
+.status-check-form input {
+    flex: 1;
+    padding: 0.8rem 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.btn-check {
+    background: linear-gradient(135deg, #8b5cf6, #3b82f6);
+    color: #fff;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn-check:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(139, 92, 246, 0.5);
+}
+
+.status-result {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 1.5rem;
+    text-align: center;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .games-selection-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 1rem;
+    }
+
+    .game-select-card {
+        display: block;
+        text-decoration: none;
+        /* ❌ ตัดขีดใต้ลิงก์ */
+        color: inherit;
+        /* ใช้สีตัวอักษรจาก parent (ไม่เป็นสีน้ำเงิน) */
+        background: #fff;
+        border-radius: 12px;
+        padding: 16px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+    }
+
+    /* ปรับขนาดโลโก้เกม */
+.game-select-icon {
+    width: 80px;           /* กว้าง 80px */
+    height: 80px;          /* สูง 80px */
+    object-fit: contain;   /* ไม่บิดสัดส่วน */
+    display: block;        /* เพื่อให้ margin auto ใช้ได้ */
+    margin: 0 auto 10px;   /* จัดกลางและเว้นช่องว่างด้านล่าง */
+    border-radius: 10px;   /* ถ้าต้องการมุมโค้ง */
+}
+
+/* Card hover effect */
+.game-select-card:hover .game-select-icon {
+    transform: scale(1.05);              /* ขยายเล็กน้อยเวลาชี้ */
+    transition: transform 0.3s ease;     /* เอฟเฟกต์นุ่มนวล */
+}
+
+/* ปรับ card ทั้งหมด */
+.game-select-card {
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 15px;
+    text-align: center;
+    padding: 15px;
+    display: block;
+    text-decoration: none; /* ลบ underline */
+    color: #fff;           /* สีตัวอักษร */
+    transition: all 0.3s ease;
+}
+
+.game-select-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px #b86cff;
+}
+
+
+    .topup-form-container {
+        padding: 1.5rem;
+    }
+
+    .form-section {
+        padding: 1.5rem;
+    }
+
+    .package-grid {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    }
+
+    .payment-methods {
+        grid-template-columns: 1fr;
+    }
+
+    .status-check-form {
+        flex-direction: column;
+    }
+
+    .page-title {
+        font-size: 2rem;
+    }
+}
