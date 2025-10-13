@@ -60,7 +60,7 @@ session_start();
                                     <input type="checkbox" id="remember">
                                     <span>จดจำฉันไว้</span>
                                 </label>
-                               
+
                             </div>
 
                             <button type="submit" name="login" class="btn-auth">เข้าสู่ระบบ</button>
@@ -129,16 +129,23 @@ session_start();
                             <div class="form-group">
                                 <label for="forgot-email">อีเมลของคุณ</label>
                                 <input type="email" name="email" id="forgot-email" placeholder="กรอกอีเมลที่ลงทะเบียนไว้" required>
+
                             </div>
 
                             <div class="form-group">
                                 <label for="new-pass">รหัสผ่านใหม่</label>
-                                <input type="password" name="new_password" id="new-pass" placeholder="••••••••" required>
+                                <div class="password-input">
+                                    <input type="password" name="new_password" id="new-pass" placeholder="อย่างน้อย6" required>
+                                    <span class="toggle-password" onclick="togglePassword('new-pass')">👁️</span>
+                                </div>
                             </div>
 
                             <div class="form-group">
                                 <label for="confirm-pass">ยืนยันรหัสผ่านใหม่</label>
-                                <input type="password" name="confirm_password" id="confirm-pass" placeholder="••••••••" required>
+                                <div class="password-input">
+                                    <input type="password" name="confirm_password" id="confirm-pass" placeholder="อย่างน้อย6" required>
+                                    <span class="toggle-password" onclick="togglePassword('confirm-pass')">👁️</span>
+                                </div>
                             </div>
 
                             <button type="submit" class="btn-auth">บันทึกรหัสผ่านใหม่</button>
@@ -150,29 +157,8 @@ session_start();
         </section>
     </div>
 
-    <!-- Footer -->
-    <?php include 'footer.php'; ?>
-
     <script src="js/script.js"></script>
     <script src="js/login.js"></script>
-
-    <script>
-        // ✅ สลับแท็บ (รวม forgot password)
-        const tabButtons = document.querySelectorAll(".tab-btn, .forgot-password-btn");
-        const forms = document.querySelectorAll(".form-content");
-
-        tabButtons.forEach(btn => {
-            btn.addEventListener("click", () => {
-                const target = btn.dataset.tab;
-                forms.forEach(f => f.classList.remove("active"));
-                document.getElementById(target + "Form").classList.add("active");
-
-                // ปรับปุ่ม active
-                document.querySelectorAll(".tab-btn").forEach(t => t.classList.remove("active"));
-                const tab = document.querySelector(`.tab-btn[data-tab="${target}"]`);
-                if (tab) tab.classList.add("active");
-            });
-        });
-    </script>
 </body>
+
 </html>

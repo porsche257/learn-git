@@ -54,7 +54,7 @@ $orders = $stmt_orders->fetchAll(PDO::FETCH_ASSOC);
                         <th>แพ็กเกจ</th>
                         <th>ช่องทางชำระเงิน</th>
                         <th>วันที่สั่งซื้อ</th>
-                        <th>จัดการ</th> <!-- ✅ เพิ่มคอลัมน์นี้ -->
+                        <th>จัดการ</th> 
                     </tr>
                 </thead>
                 <tbody>
@@ -70,7 +70,7 @@ $orders = $stmt_orders->fetchAll(PDO::FETCH_ASSOC);
                             <td>
                                 <form method="POST" action="delete_order.php" onsubmit="return confirm('ยืนยันการลบรายการนี้หรือไม่?');">
                                     <input type="hidden" name="order_id" value="<?= $order['id'] ?>">
-                                    <button type="submit" class="delete-btn">ลบ</button>
+                                    <button type="submit">ลบ</button>
                                 </form>
                             </td>
                         </tr>
