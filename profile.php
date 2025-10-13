@@ -15,7 +15,7 @@ $stmt = $pdo->prepare("SELECT username, email FROM users WHERE id = ?");
 $stmt->execute([$user_id]);
 $user = $stmt->fetch(PDO::FETCH_ASSOC);
 
-// ✅ ดึงข้อมูลคำสั่งซื้อจาก order_detail
+// ✅ ดึงข้อมูลคำสั่งซื้อ
 $stmt_orders = $pdo->prepare("SELECT * FROM orders WHERE user_id = ? ORDER BY id DESC");
 $stmt_orders->execute([$user_id]);
 $orders = $stmt_orders->fetchAll(PDO::FETCH_ASSOC);
@@ -23,7 +23,6 @@ $orders = $stmt_orders->fetchAll(PDO::FETCH_ASSOC);
 
 <!DOCTYPE html>
 <html lang="th">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -31,7 +30,6 @@ $orders = $stmt_orders->fetchAll(PDO::FETCH_ASSOC);
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/profile.css">
 </head>
-
 <body>
     <?php include 'nav.php'; ?>
 
@@ -44,17 +42,19 @@ $orders = $stmt_orders->fetchAll(PDO::FETCH_ASSOC);
         </div>
 
         <h2 style="color:#ff8fff;">📜 ประวัติการสั่งซื้อ</h2>
+
         <?php if (count($orders) > 0): ?>
             <table class="order-table">
                 <thead>
                     <tr>
-                        <th>#</th>
+                        <th>ลำดับ</th>
                         <th>ชื่อเกม</th>
                         <th>UID</th>
                         <th>ชื่อในเกม</th>
                         <th>แพ็กเกจ</th>
                         <th>ช่องทางชำระเงิน</th>
                         <th>วันที่สั่งซื้อ</th>
+                        <th>จัดการ</th> <!-- ✅ เพิ่มคอลัมน์นี้ -->
                     </tr>
                 </thead>
                 <tbody>
@@ -67,6 +67,12 @@ $orders = $stmt_orders->fetchAll(PDO::FETCH_ASSOC);
                             <td><?= htmlspecialchars($order['package']) ?></td>
                             <td><?= htmlspecialchars($order['payment']) ?></td>
                             <td><?= isset($order['created_at']) ? date("d/m/Y H:i", strtotime($order['created_at'])) : '-' ?></td>
+                            <td>
+                                <form method="POST" action="delete_order.php" onsubmit="return confirm('ยืนยันการลบรายการนี้หรือไม่?');">
+                                    <input type="hidden" name="order_id" value="<?= $order['id'] ?>">
+                                    <button type="submit" class="delete-btn">ลบ</button>
+                                </form>
+                            </td>
                         </tr>
                     <?php endforeach; ?>
                 </tbody>
@@ -79,9 +85,8 @@ $orders = $stmt_orders->fetchAll(PDO::FETCH_ASSOC);
             <a href="index.php" class="back-btn">กลับหน้าหลัก</a>
         </div>
     </div>
-    <script src="่js/script.js"></script>
+
+    <script src="js/script.js"></script>
     <script src="js/particles.js"></script>
-
 </body>
-
 </html>

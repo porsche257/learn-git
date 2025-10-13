@@ -19,14 +19,11 @@ session_start();
     <div class="login-card form-signin shadow">
         <span class="icon-login"><i class="bi bi-person-circle"></i></span>
 
-
         <!-- แสดง error จาก session -->
         <?php if (isset($_SESSION['error'])) { ?>
             <div class="alert alert-danger" role="alert">
-                <?php
-                echo $_SESSION['error'];
-                unset($_SESSION['error']);
-                ?>
+                <?= $_SESSION['error'];
+                unset($_SESSION['error']); ?>
             </div>
         <?php } ?>
 
@@ -39,9 +36,10 @@ session_start();
                     <div class="tab-switcher">
                         <button class="tab-btn active" data-tab="login">ล็อคอิน</button>
                         <button class="tab-btn" data-tab="register">สมัครสมาชิก</button>
+                        <button class="tab-btn" data-tab="forgot">ลืมรหัสผ่าน</button> <!-- ✅ เพิ่ม -->
                     </div>
 
-                    <!-- ✅ Login Form (ส่งไป login_db.php) -->
+                    <!-- ✅ Login Form -->
                     <div id="loginForm" class="form-content active">
                         <form class="auth-form" action="login_db.php" method="POST">
                             <div class="form-group">
@@ -62,7 +60,7 @@ session_start();
                                     <input type="checkbox" id="remember">
                                     <span>จดจำฉันไว้</span>
                                 </label>
-                                <a href="#" class="forgot-password">ลืมรหัสผ่าน?</a>
+                               
                             </div>
 
                             <button type="submit" name="login" class="btn-auth">เข้าสู่ระบบ</button>
@@ -85,6 +83,7 @@ session_start();
                         </form>
                     </div>
 
+                    <!-- ✅ Register Form -->
                     <div id="registerForm" class="form-content">
                         <form class="auth-form" action="register_db.php" method="POST">
                             <div class="form-group">
@@ -124,6 +123,28 @@ session_start();
                         </form>
                     </div>
 
+                    <!-- ✅ Forgot Password Form -->
+                    <div id="forgotForm" class="form-content">
+                        <form class="auth-form" action="reset_password_db.php" method="POST">
+                            <div class="form-group">
+                                <label for="forgot-email">อีเมลของคุณ</label>
+                                <input type="email" name="email" id="forgot-email" placeholder="กรอกอีเมลที่ลงทะเบียนไว้" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="new-pass">รหัสผ่านใหม่</label>
+                                <input type="password" name="new_password" id="new-pass" placeholder="••••••••" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="confirm-pass">ยืนยันรหัสผ่านใหม่</label>
+                                <input type="password" name="confirm_password" id="confirm-pass" placeholder="••••••••" required>
+                            </div>
+
+                            <button type="submit" class="btn-auth">บันทึกรหัสผ่านใหม่</button>
+                        </form>
+                    </div>
+
                 </div>
             </div>
         </section>
@@ -131,8 +152,27 @@ session_start();
 
     <!-- Footer -->
     <?php include 'footer.php'; ?>
+
     <script src="js/script.js"></script>
     <script src="js/login.js"></script>
-</body>
 
+    <script>
+        // ✅ สลับแท็บ (รวม forgot password)
+        const tabButtons = document.querySelectorAll(".tab-btn, .forgot-password-btn");
+        const forms = document.querySelectorAll(".form-content");
+
+        tabButtons.forEach(btn => {
+            btn.addEventListener("click", () => {
+                const target = btn.dataset.tab;
+                forms.forEach(f => f.classList.remove("active"));
+                document.getElementById(target + "Form").classList.add("active");
+
+                // ปรับปุ่ม active
+                document.querySelectorAll(".tab-btn").forEach(t => t.classList.remove("active"));
+                const tab = document.querySelector(`.tab-btn[data-tab="${target}"]`);
+                if (tab) tab.classList.add("active");
+            });
+        });
+    </script>
+</body>
 </html>

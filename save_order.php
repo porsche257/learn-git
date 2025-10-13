@@ -1,5 +1,7 @@
 <?php
 session_start();
+require 'config.php';
+$conn = new mysqli("localhost", "root", "", "kakai_db");
 
 // ตรวจสอบการล็อกอิน
 if (!isset($_SESSION['user_id'])) {
@@ -12,13 +14,6 @@ if (!isset($_SESSION['user_id'])) {
     exit();
 }
 
-// เชื่อมต่อฐานข้อมูล
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "kakai_db";
-
-$conn = new mysqli($servername, $username, $password, $dbname);
 
 if ($conn->connect_error) {
     die("เชื่อมต่อฐานข้อมูลล้มเหลว: " . $conn->connect_error);

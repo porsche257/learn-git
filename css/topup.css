@@ -572,37 +572,47 @@
     }
 
     /* ปรับขนาดโลโก้เกม */
-.game-select-icon {
-    width: 80px;           /* กว้าง 80px */
-    height: 80px;          /* สูง 80px */
-    object-fit: contain;   /* ไม่บิดสัดส่วน */
-    display: block;        /* เพื่อให้ margin auto ใช้ได้ */
-    margin: 0 auto 10px;   /* จัดกลางและเว้นช่องว่างด้านล่าง */
-    border-radius: 10px;   /* ถ้าต้องการมุมโค้ง */
-}
+    .game-select-icon {
+        width: 80px;
+        /* กว้าง 80px */
+        height: 80px;
+        /* สูง 80px */
+        object-fit: contain;
+        /* ไม่บิดสัดส่วน */
+        display: block;
+        /* เพื่อให้ margin auto ใช้ได้ */
+        margin: 0 auto 10px;
+        /* จัดกลางและเว้นช่องว่างด้านล่าง */
+        border-radius: 10px;
+        /* ถ้าต้องการมุมโค้ง */
+    }
 
-/* Card hover effect */
-.game-select-card:hover .game-select-icon {
-    transform: scale(1.05);              /* ขยายเล็กน้อยเวลาชี้ */
-    transition: transform 0.3s ease;     /* เอฟเฟกต์นุ่มนวล */
-}
+    /* Card hover effect */
+    .game-select-card:hover .game-select-icon {
+        transform: scale(1.05);
+        /* ขยายเล็กน้อยเวลาชี้ */
+        transition: transform 0.3s ease;
+        /* เอฟเฟกต์นุ่มนวล */
+    }
 
-/* ปรับ card ทั้งหมด */
-.game-select-card {
-    background: rgba(255, 255, 255, 0.08);
-    border-radius: 15px;
-    text-align: center;
-    padding: 15px;
-    display: block;
-    text-decoration: none; /* ลบ underline */
-    color: #fff;           /* สีตัวอักษร */
-    transition: all 0.3s ease;
-}
+    /* ปรับ card ทั้งหมด */
+    .game-select-card {
+        background: rgba(255, 255, 255, 0.08);
+        border-radius: 15px;
+        text-align: center;
+        padding: 15px;
+        display: block;
+        text-decoration: none;
+        /* ลบ underline */
+        color: #fff;
+        /* สีตัวอักษร */
+        transition: all 0.3s ease;
+    }
 
-.game-select-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 0 15px #b86cff;
-}
+    .game-select-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 0 15px #b86cff;
+    }
 
 
     .topup-form-container {

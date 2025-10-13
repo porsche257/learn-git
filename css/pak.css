@@ -1,0 +1,55 @@
+ /* Container */
+ .topup-container {
+     width: 90%;
+     max-width: 900px;
+     margin: 40px auto;
+ }
+
+ .page-title {
+     font-size: 2rem;
+     color: #fff;
+     margin-bottom: 25px;
+ }
+
+ .page-title span {
+     color: #ff92f6;
+ }
+
+ /* Card Box */
+ .form-card {
+     background: rgba(255, 255, 255, 0.08);
+     border-radius: 20px;
+     padding: 30px 40px;
+     margin-bottom: 30px;
+     backdrop-filter: blur(12px);
+     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+ }
+
+ .section-title {
+     font-size: 1.2rem;
+     color: #ff92f6;
+     border-left: 4px solid #ff77ff;
+     padding-left: 10px;
+     margin-bottom: 20px;
+ }
+
+ /* Input Fields */
+ .form-group {
+     margin-bottom: 20px;
+ }
+
+ input[type="text"] {
+     width: 100%;
+     padding: 10px;
+     border-radius: 10px;
+     border: none;
+     background: rgba(255, 255, 255, 0.15);
+     color: #fff;
+     font-size: 1rem;
+ }
+
+ /* Packages */
+ .package-grid {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+     gap: 15px;

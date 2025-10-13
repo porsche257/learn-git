@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+}ำ
 
 :root {
     --primary: #31098d;
@@ -47,6 +47,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 5  rem;
 }
 
 .logo {
@@ -281,6 +282,12 @@ body {
     background: rgba(255, 255, 255, 0.15);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
     border-color: rgba(236, 72, 153, 0.5);
+}
+
+
+
+.game-card:hover p {
+    color: #000000; /* เปลี่ยนเป็นดำเมื่อเอาเมาส์ชี้ */
 }
 
 .game-icon {

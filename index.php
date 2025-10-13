@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="th">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PickTopUp  - เติมเกมออนไลน์ รวดเร็ว ปลอดภัย</title>
+    <title>PickTopUp - เติมเกมออนไลน์ รวดเร็ว ปลอดภัย</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>  
-     <?php include 'nav.php'; ?>
+
+<body>
+    <?php include 'nav.php'; ?>
     <!-- Promo Banner -->
     <div class="promo-banner">
         <div class="promo-text">
@@ -36,44 +38,45 @@
         <div class="container">
             <h2 class="section-title">เกมยอดนิยม</h2>
             <p class="section-subtitle">รองรับทุกเกมดัง เติมง่าย รับทันที</p>
-            
+
             <div class="games-grid">
-                <div class="game-card">
-                    <div class="game-icon">🔥</div>
+
+                <a href="freefire.php" class="game-card">
+                    <img src="im/ff.jpg" alt="Free Fire Logo" width="80" height="80">
                     <h3>Free Fire</h3>
                     <p>เพชร Free Fire</p>
-                    <a href="topup.html" class="btn-secondary">เติมเลย</a>
-                </div>
-                <div class="game-card">
-                    <div class="game-icon">⚔️</div>
+                </a>
+
+                <a href="rov.php" class="game-card">
+                    <img src="im/images.jpg"  alt="ROV Logo" width="80" height="80">
                     <h3>ROV</h3>
                     <p>คูปอง ROV</p>
-                    <a href="topup.html" class="btn-secondary">เติมเลย</a>
-                </div>
-                <div class="game-card">
-                    <div class="game-icon">🎯</div>
+                </a>
+
+                <a href="pubg.php" class="game-card">
+                    <img src="im/pubg.jpg"  alt="PUBG Mobile Logo" width="80" height="80">
                     <h3>PUBG Mobile</h3>
                     <p>UC PUBG</p>
-                    <a href="topup.html" class="btn-secondary">เติมเลย</a>
-                </div>
-                <div class="game-card">
-                    <div class="game-icon">🌟</div>
+                </a>
+
+                <a href="genchin.php" class="game-card">
+                    <img src="im/genchin.png" alt="Genshin Impact Logo" width="80" height="80">
                     <h3>Genshin Impact</h3>
                     <p>Genesis Crystal</p>
-                    <a href="topup.html" class="btn-secondary">เติมเลย</a>
-                </div>
-                <div class="game-card">
-                    <div class="game-icon">💰</div>
+                </a>
+
+                <a href="ml.php" class="game-card">
+                    <img src="im/ml.png" alt="Mobile Legends Logo" width="80" height="80">
                     <h3>Mobile Legends</h3>
                     <p>Diamond ML</p>
-                    <a href="topup.html" class="btn-secondary">เติมเลย</a>
-                </div>
-                <div class="game-card">
-                    <div class="game-icon">🎮</div>
+                </a>
+
+                <a href="Rak.php" class="game-card">
+                    <img src="im/rag.webp"  alt="Ragnarok M Logo" width="80" height="80">
                     <h3>Ragnarok M</h3>
                     <p>Big Cat Coin</p>
-                    <a href="topup.html" class="btn-secondary">เติมเลย</a>
-                </div>
+                </a>
+
             </div>
         </div>
     </section>
@@ -82,7 +85,7 @@
     <section class="promo-section">
         <div class="container">
             <h2 class="section-title">โปรโมชั่นพิเศษ</h2>
-            
+
             <div class="promo-grid">
                 <div class="promo-card">
                     <div class="promo-badge">HOT</div>
@@ -110,7 +113,7 @@
     <section class="trust-section">
         <div class="container">
             <h2 class="section-title">ทำไมต้องเลือกเรา</h2>
-            
+
             <div class="trust-grid">
                 <div class="trust-card">
                     <div class="trust-icon">⚡</div>
@@ -140,7 +143,7 @@
     <section class="reviews-section">
         <div class="container">
             <h2 class="section-title">รีวิวจากลูกค้า</h2>
-            
+
             <div class="reviews-grid">
                 <div class="review-card">
                     <div class="stars">⭐⭐⭐⭐⭐</div>
@@ -205,4 +208,5 @@
     <script src="js/script.js"></script>
     <script src="js/particles.js"></script>
 </body>
+
 </html>

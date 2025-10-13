@@ -30,78 +30,78 @@
             <!-- Games Selection Grid -->
             <div id="gamesGrid" class="games-selection-grid">
 
-                <a href="freefire.php" class="game-select-card">
+                <div class="game-select-card">
                     <div class="game-badge">HOT</div>
-                    <img src="im/ff.jpg" class="game-select-icon" alt="Free Fire Logo" width="80" height="80">
+                    <img src="im/ff.jpg" width="80" height="80" alt="Free Fire">
                     <h3>Free Fire</h3>
                     <p>เพชร Free Fire</p>
-                    <span class="price-tag">เริ่มต้น 20 บาท</span>
-                </a>
+                    <a href="freefire.php" class="price-tag">เริ่มต้น 20 บาท</a>
+                </div>
 
-
-                <a href="rov.php" class="game-select-card" data-game="rov">
+                <div class="game-select-card">
                     <div class="game-badge">POPULAR</div>
-                    <img src="im/images.jpg" class="game-select-icon" alt="Free Fire Logo" width="80" height="80">
+                    <img src="im/images.jpg" width="80" height="80" alt="ROV">
                     <h3>ROV</h3>
                     <p>คูปอง ROV</p>
-                    <span class="price-tag">เริ่มต้น 25 บาท</span>
-                </a>
+                    <a href="rov.php" class="price-tag">เริ่มต้น 25 บาท</a>
+                </div>
 
-                <a href="pubg.php" class="game-select-card" data-game="pubg">
-                    <img src="im/pubg.jpg" class="game-select-icon" alt="Free Fire Logo" width="80" height="80">
+                <div class="game-select-card">
+                    <img src="im/pubg.jpg" width="80" height="80" alt="PUBG Mobile">
                     <h3>PUBG Mobile</h3>
                     <p>UC PUBG</p>
-                    <span class="price-tag">เริ่มต้น 30 บาท</span>
-                </a>
+                    <a href="pubg.php" class="price-tag">เริ่มต้น 30 บาท</a>
+                </div>
 
-                <a href="genchin.php" class="game-select-card" data-game="genshin">
-                    <img src="im/genchin.png" class="game-select-icon" alt="Free Fire Logo" width="80" height="80">
+                <div class="game-select-card">
+                    <img src="im/genchin.png" width="80" height="80" alt="Genshin Impact">
                     <h3>Genshin Impact</h3>
                     <p>Genesis Crystal</p>
-                    <span class="price-tag">เริ่มต้น 35 บาท</span>
-                </a>
+                    <a href="genchin.php" class="price-tag">เริ่มต้น 35 บาท</a>
+                </div>
 
-                <a href="ml.php" class="game-select-card" data-game="mobilelegends">
-                    <img src="im/ml.png" class="game-select-icon" alt="Free Fire Logo" width="80" height="80">
+                <div class="game-select-card">
+                    <img src="im/ml.png" width="80" height="80" alt="Mobile Legends">
                     <h3>Mobile Legends</h3>
                     <p>Diamond ML</p>
-                    <span class="price-tag">เริ่มต้น 20 บาท</span>
-                </a>
+                    <a href="ml.php" class="price-tag">เริ่มต้น 20 บาท</a>
+                </div>
 
-                <a href="Rak.php" class="game-select-card" data-game="ragnarok">
-                    <img src="im/rag.webp" class="game-select-icon" alt="Free Fire Logo" width="80" height="80">
+                <div class="game-select-card">
+                    <img src="im/rag.webp" width="80" height="80" alt="Ragnarok M">
                     <h3>Ragnarok M</h3>
                     <p>Big Cat Coin</p>
-                    <span class="price-tag">เริ่มต้น 40 บาท</span>
-                </a>
+                    <a href="Rak.php" class="price-tag">เริ่มต้น 40 บาท</a>
+                </div>
 
-                <a href="call.php" class="game-select-card" data-game="codm">
-                    <img src="im/call.png" class="game-select-icon" alt="Free Fire Logo" width="80" height="80">
+                <div class="game-select-card">
+                    <img src="im/call.png" width="80" height="80" alt="Call of Duty Mobile">
                     <h3>Call of Duty Mobile</h3>
                     <p>CP COD Mobile</p>
-                    <span class="price-tag">เริ่มต้น 30 บาท</span>
-                </a>
+                    <a href="call.php" class="price-tag">เริ่มต้น 30 บาท</a>
+                </div>
 
-                <a href="onkaiStarRail.php" class="game-select-card" data-game="honkai">
-                    <img src="im/honkill.png" class="game-select-icon" alt="Free Fire Logo" width="80" height="80">
+                <div class="game-select-card">
+                    <img src="im/honkill.png" width="80" height="80" alt="Honkai Star Rail">
                     <h3>Honkai Star Rail</h3>
                     <p>Oneiric Shard</p>
-                    <span class="price-tag">เริ่มต้น 35 บาท</span>
-                </a>
+                    <a href="onkaiStarRail.php" class="price-tag">เริ่มต้น 35 บาท</a>
+                </div>
 
-                <a href="Valorant.php" class="game-select-card" data-game="valorant">
-                    <img src="im/valo.png" class="game-select-icon" alt="Free Fire Logo" width="80" height="80">
+                <div class="game-select-card">
+                    <img src="im/valo.png" width="80" height="80" alt="Valorant">
                     <h3>Valorant</h3>
                     <p>Valorant Points</p>
-                    <span class="price-tag">เริ่มต้น 50 บาท</span>
-                </a>
+                    <a href="Valorant.php" class="price-tag">เริ่มต้น 50 บาท</a>
+                </div>
 
-                <a href="Golden.php" class="game-select-card" data-game="lineagem">
-                    <img src="im/golden.png" class="game-select-icon" alt="Free Fire Logo" width="80" height="80">
+                <div class="game-select-card">
+                    <img src="im/golden.png" width="80" height="80" alt="Golden Sapatula">
                     <h3>Golden Sapatula</h3>
                     <p>RP</p>
-                    <span class="price-tag">เริ่มต้น 5 บาท</span>
-                </a>
+                    <a href="Golden.php" class="price-tag">เริ่มต้น 5 บาท</a>
+                </div>
+
 
             </div>
 
