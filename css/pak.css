@@ -1,0 +1,201 @@
+/* Container */
+.topup-container {
+     width: 90%;
+     max-width: 900px;
+     margin: 40px auto;
+ }
+
+ .page-title {
+     font-size: 2rem;
+     color: #fff;
+     margin-bottom: 25px;
+ }
+
+ .page-title span {
+     color: #ff92f6;
+ }
+
+ /* Card Box */
+ .form-card {
+     background: rgba(255, 255, 255, 0.08);
+     border-radius: 20px;
+     padding: 30px 40px;
+     margin-bottom: 30px;
+     backdrop-filter: blur(12px);
+     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+ }
+
+ .section-title {
+     font-size: 1.2rem;
+     color: #ff92f6;
+     border-left: 4px solid #ff77ff;
+     padding-left: 10px;
+     margin-bottom: 20px;
+ }
+
+ /* Input Fields */
+ .form-group {
+     margin-bottom: 20px;
+ }
+
+ input[type="text"] {
+     width: 100%;
+     padding: 10px;
+     border-radius: 10px;
+     border: none;
+     background: rgba(255, 255, 255, 0.15);
+     color: #fff;
+     font-size: 1rem;
+ }
+
+ /* Packages */
+ .package-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.package-card {
+    background: #fff;
+    border: 2px solid #e0e0e0;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    padding: 18px 24px;
+    text-align: center;
+    cursor: pointer;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    position: relative;
+    min-width: 120px;
+}
+
+.package-card input[type="radio"] {
+    display: none;
+}
+
+.package-card h3 {
+    font-size: 2.2em;
+    margin: 0;
+    color: #2d7cff;
+}
+
+.package-card p {
+    margin: 6px 0 0 0;
+    font-size: 1.1em;
+    color: #555;
+}
+
+.package-card .price {
+    display: block;
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #ff9800;
+    font-weight: bold;
+}
+
+.package-card .discount {
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    background: #ff1744;
+    color: #fff;
+    font-size: 0.95em;
+    padding: 2px 8px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.package-card input[type="radio"]:checked + h3,
+.package-card input[type="radio"]:checked + p,
+.package-card input[type="radio"]:checked + .price {
+    color: #1976d2;
+}
+
+.package-card:has(input[type="radio"]:checked) {
+    border-color: #1976d2;
+    box-shadow: 0 4px 16px rgba(25,118,210,0.12);
+}
+
+/* ช่องทางชำระเงิน */
+.payment-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.payment-card {
+    background: #fff;
+    border: 2px solid #e0e0e0;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    padding: 16px 32px;
+    text-align: center;
+    cursor: pointer;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    font-size: 1.1em;
+    color: #1976d2;
+    position: relative;
+    min-width: 140px;
+}
+
+.payment-card input[type="radio"] {
+    display: none;
+}
+
+.payment-card:has(input[type="radio"]:checked) {
+    border-color: #ff92f6;
+    box-shadow: 0 4px 16px rgba(255,146,246,0.12);
+    background: #fff0fa;
+}
+
+.payment-card p {
+    margin: 0;
+    font-weight: bold;
+    color: #1976d2;
+}
+
+/* QR Display */
+.qr-display {
+    margin-top: 18px;
+    text-align: center;
+}
+
+.qr-display img {
+    width: 120px;
+    height: 120px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    margin-bottom: 8px;
+}
+
+.qr-text {
+    color: #ff92f6;
+    font-size: 1em;
+    margin-top: 6px;
+}
+
+/* ปุ่มยืนยัน */
+.submit-area {
+    text-align: center;
+    margin-top: 24px;
+}
+
+.submit-btn {
+    background: linear-gradient(90deg, #ff92f6 0%, #2d7cff 100%);
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 14px 48px;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0 4px 16px rgba(45,124,255,0.15);
+    cursor: pointer;
+    transition: background 0.2s, box-shadow 0.2s;
+}
+
+.submit-btn:hover {
+    background: linear-gradient(90deg, #2d7cff 0%, #ff92f6 100%);
+    box-shadow: 0 6px 24px rgba(255,146,246,0.18);
+}
