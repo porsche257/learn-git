@@ -1,0 +1,373 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  background: #f4f4f9;
+  color: #333;
+}
+
+header {
+  background: #2b1055;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li:first-child {
+  margin-left: 0;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  background-color: #3e2a89;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 0 20px;
+  
+}
+.welcome-section { 
+  width: 100%;              
+  padding: 200px 150px;     
+  text-align: center;
+  color: #f3f2f2;
+
+  background-image: url('/Image/wallpaperflare.com_wallpaper.jpg');
+  background-size: cover;      
+  background-position: center;
+  position: relative;
+  z-index: 1;
+}
+
+.welcome-section::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: -1;
+}
+
+.welcome-section h2 {
+  font-size: 42px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.welcome-section p {
+  max-width: 650px;
+  margin: 0 auto;
+  font-size: 20px;
+  line-height: 1.8;
+  color: #feffff;
+
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #2b1055;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+  width: 300px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.cards .card {
+  width: 260px;          
+  text-align: center;    
+  padding-bottom: 10px;
+}
+
+/* รูปภาพเกม */
+.cards .card img {
+  width: 100%;
+  height: 160px;         
+  object-fit: cover;     
+  border-bottom: 2px solid #eee;
+}
+
+/* ชื่อเกม */
+.cards .card h3 {
+  font-size: 18px;       
+  margin: 12px 0 8px;
+  color: #2b1055;
+  font-weight: 600;
+}
+
+
+.card p {
+  margin: 0 15px 15px 15px;
+  flex-grow: 1;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #555;
+}
+
+.btn {
+  display: inline-block;
+  margin: 0 15px 15px 15px;
+  padding: 10px 20px;
+  background: #2b1055;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #3e2a89;
+}
+
+.form-box {
+  background: white;
+  padding: 20px;
+  max-width: 450px;
+  margin: 0 auto 40px auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+}
+
+.form-box label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #2b1055;
+}
+
+.form-box input[type="text"],
+.form-box input[type="email"],
+.form-box input[type="password"],
+.form-box input[type="number"],
+.form-box textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+}
+
+.form-box input[type="text"]:focus,
+.form-box input[type="email"]:focus,
+.form-box input[type="password"]:focus,
+.form-box input[type="number"]:focus,
+.form-box textarea:focus {
+  border-color: #2b1055;
+  outline: none;
+}
+
+.form-box textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.form-box button {
+  width: 100%;
+  background-color: #2b1055;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 700;
+  transition: background-color 0.3s ease;
+}
+
+.form-box button:hover {
+  background-color: #3e2a89;
+}
+
+footer {
+  background: #2b1055;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 60px;
+  font-size: 14px;
+}
+
+
+@media (max-width: 700px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  nav ul {
+    flex-direction: column;
+  }
+  nav ul li {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+}
+.review-card {
+  min-height: 120px;
+  justify-content: space-between;
+}
+
+.review-card p {
+  font-style: italic;
+  color: #444;
+}
+
+.review-card small {
+  display: block;
+  margin: 10px 15px;
+  color: #777;
+  font-size: 13px;
+  text-align: right;
+}
+.marquee {
+  background: #3e2a89;
+  color: #fff;
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  padding: 10px 0;
+  font-weight: bold;
+  position: relative;
+}
+
+.marquee p {
+  display: inline-block;
+  padding-left: 100%;
+  animation: marquee 15s linear infinite;
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-100%); }
+}
+
+/* พื้นหลัง Gradient พร้อมเอฟเฟกต์อนิเมชัน */
+body {
+  background: linear-gradient(120deg, #2b1055, #7597de);
+  color: #fff;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow-x: hidden;
+}
+
+/* เอฟเฟกต์กลม ๆ เคลื่อนที่ */
+.background-bubbles {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.background-bubbles span {
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: rgba(255,255,255,0.2);
+  border-radius: 50%;
+  bottom: -150px;
+  animation: rise 20s infinite;
+}
+
+.background-bubbles span:nth-child(1) { left: 25%; width: 30px; height: 30px; animation-duration: 18s; }
+.background-bubbles span:nth-child(2) { left: 10%; width: 20px; height: 20px; animation-duration: 12s; animation-delay: 2s; }
+.background-bubbles span:nth-child(3) { left: 70%; width: 25px; height: 25px; animation-duration: 16s; animation-delay: 4s; }
+.background-bubbles span:nth-child(4) { left: 40%; width: 15px; height: 15px; animation-duration: 14s; animation-delay: 6s; }
+.background-bubbles span:nth-child(5) { left: 85%; width: 35px; height: 35px; animation-duration: 20s; animation-delay: 3s; }
+
+@keyframes rise {
+  0% { transform: translateY(0) scale(1); opacity: 0.5; }
+  50% { opacity: 1; }
+  100% { transform: translateY(-1200px) scale(0.5); opacity: 0; }
+}
+
+
+.hero {
+  background: linear-gradient(135deg, #2b1055, #7597de);
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+  position: relative;
+}
+
+.hero h2 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.hero-btn {
+  background: #ff6b6b;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 18px;
+  transition: background 0.3s ease;
+}
+
+.hero-btn:hover {
+  background: #ff3b3b;
+}
+
+.cards .card img {
+  height: 180px;
+  object-fit: cover;
+}
